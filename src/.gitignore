@@ -1,0 +1,26 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyc
+*.pyd
+
+#Test cache
+.pytest_cache/
+.coverage
+
+#Virtual environment
+venv/
+.env/
+.venv/
+
+#IDE
+.vscode
+.idea/
+
+#OS files
+.DS_Store
+Thumbs.db
+
+#Unittest/coverage reports
+htmlcov/
+.coverage.*
