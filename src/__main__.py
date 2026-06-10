@@ -1,4 +1,4 @@
-from db.backend.tuiLAB2 import run
+from src.tuiLAB2 import run
 
 def main():
     run()
