@@ -11,7 +11,7 @@ def create_record(
     square: float,
     cost: float,
 ) -> FlatRecord:
-    if any(record[0]==flat_id for record in FlatRecord): #ошибки
+    if any(record[0]==flat_id for record in Flat): #ошибки
         raise ValueError(f"Запись с ID {flat_id} уже существует")
     if rooms_amount<1:
         raise ValueError("Поле кол-ва комнат не может содержать значение менее 1")
