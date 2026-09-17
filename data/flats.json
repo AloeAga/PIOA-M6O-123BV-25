@@ -1,0 +1,11 @@
+{
+  "columns": [
+    "id",
+    "rooms",
+    "street",
+    "house",
+    "square",
+    "cost"
+  ],
+  "records": []
+}
