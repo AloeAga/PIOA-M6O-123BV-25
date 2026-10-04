@@ -1,0 +1,22 @@
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+
+[tool.coverage.run]
+source = ["src/db/backend"]
+omit = [
+    "src/db/backend/file.py",
+    "src/db/backend/tui.py",
+    "src/db/backend/main.py",
+    "src/db/backend/__init__.py",
+    "src/db/__init__.py",
+    "src/db/__main__.py",
+    "*/__init__.py",
+]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "if __name__ == .__main__.:",
+    "raise NotImplementedError",
+]
